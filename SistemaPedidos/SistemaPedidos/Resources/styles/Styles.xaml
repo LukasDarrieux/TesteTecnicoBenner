@@ -1,0 +1,253 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!-- TextBox -->
+    <Style TargetType="TextBox">
+        <Setter Property="Margin" Value="0,5,0,10"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="BorderBrush" Value="#D1D5DB"/>
+        <Setter Property="BorderThickness" Value="1"/>
+    </Style>
+
+    <!-- ComboBox -->
+    <Style TargetType="ComboBox">
+        <Setter Property="Margin" Value="0,5,0,10"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="BorderBrush" Value="#D1D5DB"/>
+        <Setter Property="BorderThickness" Value="1"/>
+    </Style>
+
+    <!-- Date Picker -->
+    <Style TargetType="DatePicker">
+        <Setter Property="Margin" Value="0,5,0,10"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="BorderBrush" Value="#D1D5DB"/>
+        <Setter Property="BorderThickness" Value="1"/>
+    </Style>
+
+    <!-- Labels -->
+    <Style TargetType="Label">
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="Margin" Value="0,10,0,0"/>
+    </Style>
+
+    <!-- Button -->
+    <Style TargetType="Button">
+        <Setter Property="Padding" Value="10,5"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Width" Value="110"/>
+        <Setter Property="Height" Value="35"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Cursor" Value="Hand"/>
+    </Style>
+
+    <!-- Button Primary -->
+    <Style x:Key="PrimaryButton" TargetType="Button">
+        <Setter Property="Background" Value="#2563EB"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Padding" Value="10,5"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Width" Value="110"/>
+        <Setter Property="Height" Value="35"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Cursor" Value="Hand"/>
+    </Style>
+
+    <!-- Button Secundário -->
+    <Style x:Key="SecondaryButton" TargetType="Button">
+        <Setter Property="Background" Value="#E5E7EB"/>
+        <Setter Property="Foreground" Value="#111827"/>
+        <Setter Property="Padding" Value="10,5"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Width" Value="110"/>
+        <Setter Property="Height" Value="35"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Cursor" Value="Hand"/>
+    </Style>
+
+    <!-- Button Success -->
+    <Style x:Key="SuccessButton" TargetType="Button">
+        <Setter Property="Background" Value="#198754"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Padding" Value="10,5"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Width" Value="110"/>
+        <Setter Property="Height" Value="35"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Cursor" Value="Hand"/>
+    </Style>
+
+    <!-- Button Warning -->
+    <Style x:Key="WarningButton" TargetType="Button">
+        <Setter Property="Background" Value="#FFC107"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Padding" Value="10,5"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Width" Value="110"/>
+        <Setter Property="Height" Value="35"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Cursor" Value="Hand"/>
+    </Style>
+
+    <!-- Button Danger -->
+    <Style x:Key="DangerButton" TargetType="Button">
+        <Setter Property="Background" Value="#DC3545"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Padding" Value="10,5"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Width" Value="110"/>
+        <Setter Property="Height" Value="35"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Cursor" Value="Hand"/>
+    </Style>
+ 
+    <!-- Card Info -->
+    <Style x:Key="CardInfo" TargetType="StackPanel">
+        <Setter Property="Margin" Value="10,5,10,5"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Width" Value="400"/>
+        <Setter Property="Height" Value="120"/>
+    </Style>
+
+    <!-- Border Primary -->
+    <Style x:Key="BorderPrimary" TargetType="Border">
+        <Setter Property="BorderBrush" Value="#2563EB"/>
+        <Setter Property="Background" Value="#2563EB"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="CornerRadius" Value="8"/>
+        <Setter Property="Margin" Value="10,0,10,0"/>
+    </Style>
+
+    <!-- Border Secondary -->
+    <Style x:Key="BorderSecondary" TargetType="Border">
+        <Setter Property="BorderBrush" Value="#D9D9D9"/>
+        <Setter Property="Background" Value="#D9D9D9"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="CornerRadius" Value="8"/>
+        <Setter Property="Margin" Value="10,0,10,0"/>
+    </Style>
+
+    <!-- Border Success -->
+    <Style x:Key="BorderSuccess" TargetType="Border">
+        <Setter Property="BorderBrush" Value="#198754"/>
+        <Setter Property="Background" Value="#198754"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="CornerRadius" Value="8"/>
+        <Setter Property="Margin" Value="10,0,10,0"/>
+    </Style>
+
+    <!-- Border Warning -->
+    <Style x:Key="BorderWarning" TargetType="Border">
+        <Setter Property="BorderBrush" Value="#FFC107"/>
+        <Setter Property="Background" Value="#FFC107"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="CornerRadius" Value="8"/>
+        <Setter Property="Margin" Value="10,0,10,0"/>
+    </Style>
+
+    <!-- Border Danger -->
+    <Style x:Key="BorderDanger" TargetType="Border">
+        <Setter Property="BorderBrush" Value="#DC3545"/>
+        <Setter Property="Background" Value="#DC3545"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="CornerRadius" Value="8"/>
+        <Setter Property="Margin" Value="10,0,10,0"/>
+    </Style>
+
+    <!-- Border Primary Outline -->
+    <Style x:Key="BorderPrimaryOutline" TargetType="Border">
+        <Setter Property="BorderBrush" Value="#2563EB"/>
+        <Setter Property="BorderThickness" Value="4"/>
+        <Setter Property="CornerRadius" Value="8"/>
+        <Setter Property="Margin" Value="10,0,10,0"/>
+    </Style>
+
+    <!-- Border Secondary Outline -->
+    <Style x:Key="BorderSecondaryOutline" TargetType="Border">
+        <Setter Property="BorderBrush" Value="#D9D9D9"/>
+        <Setter Property="BorderThickness" Value="4"/>
+        <Setter Property="CornerRadius" Value="8"/>
+        <Setter Property="Margin" Value="10,0,10,0"/>
+    </Style>
+
+    <!-- Border Success Outline -->
+    <Style x:Key="BorderSuccessOutline" TargetType="Border">
+        <Setter Property="BorderBrush" Value="#198754"/>
+        <Setter Property="BorderThickness" Value="4"/>
+        <Setter Property="CornerRadius" Value="8"/>
+        <Setter Property="Margin" Value="10,0,10,0"/>
+    </Style>
+
+    <!-- Border Warning Outline -->
+    <Style x:Key="BorderWarningOutline" TargetType="Border">
+        <Setter Property="BorderBrush" Value="#FFC107"/>
+        <Setter Property="BorderThickness" Value="4"/>
+        <Setter Property="CornerRadius" Value="8"/>
+        <Setter Property="Margin" Value="10,0,10,0"/>
+    </Style>
+
+    <!-- Border Danger Outline -->
+    <Style x:Key="BorderDangerOutline" TargetType="Border">
+        <Setter Property="BorderBrush" Value="#DC3545"/>
+        <Setter Property="BorderThickness" Value="4"/>
+        <Setter Property="CornerRadius" Value="8"/>
+        <Setter Property="Margin" Value="10,0,10,0"/>
+    </Style>
+
+    <!-- Title Card -->
+    <Style x:Key="TextCardTitle" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Segoe UI"/>
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Margin" Value="0,10,0,0"/>
+        <Setter Property="Padding" Value="5,5"/>
+        <Setter Property="FontWeight" Value="SemiBold" />
+    </Style>
+
+    <!-- SubTitle Card -->
+    <Style x:Key="TextCardSubTitle" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Segoe UI"/>
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Margin" Value="0,0,0,0"/>
+        <Setter Property="Padding" Value="5,5"/>
+        <Setter Property="FontWeight" Value="SemiBold" />
+    </Style>
+
+    <!-- Title Card Dark -->
+    <Style x:Key="TextCardTitleBlack" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Segoe UI"/>
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Margin" Value="0,10,0,0"/>
+        <Setter Property="Padding" Value="5,5"/>
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+    </Style>
+
+    <!-- SubTitle Card Dark -->
+    <Style x:Key="TextCardSubTitleBlack" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Segoe UI"/>
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Margin" Value="0,0,0,0"/>
+        <Setter Property="Padding" Value="5,5"/>
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+    </Style>
+
+</ResourceDictionary>

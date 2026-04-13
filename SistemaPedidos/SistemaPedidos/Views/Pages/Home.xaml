@@ -1,0 +1,131 @@
+﻿<Page x:Class="SistemaPedidos.Views.Pages.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SistemaPedidos.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="800"
+      Title="Home">
+    
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <Grid Grid.Row="0" Margin="10,30,10,10">
+            <TextBlock Text="Dashboard" FontSize="22" FontWeight="Bold"/>
+        </Grid>
+        
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Style="{StaticResource BorderSecondaryOutline}">
+                <StackPanel Style="{StaticResource CardInfo}" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Style="{StaticResource TextCardTitleBlack}" Text="Pessoas"/>
+                    <TextBlock Style="{StaticResource TextCardSubTitleBlack}" Text="0" x:Name="lblTotalPessoas"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="1" Style="{StaticResource BorderSecondaryOutline}">
+                <StackPanel Style="{StaticResource CardInfo}" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Style="{StaticResource TextCardTitleBlack}" Text="Produtos" />
+                    <TextBlock Style="{StaticResource TextCardSubTitleBlack}" Text="0" x:Name="lblTotalProdutos"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="2" Style="{StaticResource BorderSecondaryOutline}">
+                <StackPanel Style="{StaticResource CardInfo}" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Grid.Row="0" Style="{StaticResource TextCardTitleBlack}" Text="Pedidos"/>
+                    <TextBlock Grid.Row="1" Style="{StaticResource TextCardSubTitleBlack}" Text="0" x:Name="lblTotalPedidos"/>
+                </StackPanel>
+            </Border>
+
+        </Grid>
+
+        <Grid Grid.Row="2" Margin="10,30,10,10">
+            <TextBlock Text="Pedidos Status" FontSize="22" FontWeight="Bold"/>
+        </Grid>
+
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Style="{StaticResource BorderDanger}">
+                <StackPanel Style="{StaticResource CardInfo}" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Style="{StaticResource TextCardTitle}" Text="Pendente"/>
+                    <TextBlock Style="{StaticResource TextCardSubTitle}" Text="0" x:Name="lblTotalPedidoPendente" />
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="1" Style="{StaticResource BorderPrimary}">
+                <StackPanel Style="{StaticResource CardInfo}" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Style="{StaticResource TextCardTitle}" Text="Pago" />
+                    <TextBlock Style="{StaticResource TextCardSubTitle}" Text="0" x:Name="lblTotalPedidoPago"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="2" Style="{StaticResource BorderWarning}">
+                <StackPanel Style="{StaticResource CardInfo}" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Grid.Row="0" Style="{StaticResource TextCardTitle}" Text="Enviado"/>
+                    <TextBlock Grid.Row="1" Style="{StaticResource TextCardSubTitle}" Text="0" x:Name="lblTotalPedidoEnviado"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="3" Style="{StaticResource BorderSuccess}">
+                <StackPanel Style="{StaticResource CardInfo}" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Grid.Row="0" Style="{StaticResource TextCardTitle}" Text="Recebido"/>
+                    <TextBlock Grid.Row="1" Style="{StaticResource TextCardSubTitle}" Text="0" x:Name="lblTotalPedidoRecebido"/>
+                </StackPanel>
+            </Border>
+
+        </Grid>
+
+        <Grid Grid.Row="4" Margin="10,30,10,10">
+            <TextBlock Text="Pedidos Pagamentos" FontSize="22" FontWeight="Bold"/>
+        </Grid>
+
+        <Grid Grid.Row="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Style="{StaticResource BorderSuccessOutline}">
+                <StackPanel Style="{StaticResource CardInfo}" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Style="{StaticResource TextCardTitleBlack}" Text="Dinheiro"/>
+                    <TextBlock Style="{StaticResource TextCardSubTitleBlack}" Text="0" x:Name="lblTotalPagamentoDinheiro"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="1" Style="{StaticResource BorderPrimaryOutline}">
+                <StackPanel Style="{StaticResource CardInfo}" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Style="{StaticResource TextCardTitleBlack}" Text="Cartão" />
+                    <TextBlock Style="{StaticResource TextCardSubTitleBlack}" Text="0" x:Name="lblTotalPagamentoCartao"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="2" Style="{StaticResource BorderWarningOutline}">
+                <StackPanel Style="{StaticResource CardInfo}" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Grid.Row="0" Style="{StaticResource TextCardTitleBlack}" Text="Boleto"/>
+                    <TextBlock Grid.Row="1" Style="{StaticResource TextCardSubTitleBlack}" Text="0" x:Name="lblTotalPagamentoBoleto"/>
+                </StackPanel>
+            </Border>
+
+        </Grid>
+    </Grid>
+</Page>
