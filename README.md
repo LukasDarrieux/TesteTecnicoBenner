@@ -5,32 +5,24 @@ Aplicação em WPF para gerenciamento de Pessoas, Produtos e Pedidos.
 # Resumo das telas
 
 - Home (mini dashboard)
-<p align="center">
-    <img src="img/Home.png" width="600"/>
-</p>
+![Home](img/Home.PNG)
 
 - Pessoas
   - Listagem de pessoas (busca e filtros).
   - Cadastro / Edição / Visualização.
-<p align="center">
-    <img src="img/Pessoas.png" width="600"/>
-</p>
+![Pessoas](img/Pessoas.PNG.png)
 
 - Produtos
   - Listagem de produtos (busca e filtros).
   - Cadastro / Edição / Visualização.
-<p align="center">
-    <img src="img/Produto.png" width="600"/>
-</p>
+![Produto](img/Produto.png)
 
 
 - Pedidos
   - Listagem de pedidos com filtros (pessoa, status, forma de pagamento e período).
   - Cadastro / Visualização / Alteração de status.
   - Gerenciamento de itens do pedido.
-<p align="center">
-    <img src="img/Pedido.png" width="600"/>
-</p>
+![Pedido](img/Pedido.PNG)
 
 # Persistência de dados
 
@@ -83,9 +75,7 @@ O projeto está organizado em camadas e projetos separados para manter responsab
 
 # Diagrama das camadas
 
-<p align="center">
-  <img src="img/Diagrama.png" width="600"/>
-</p>
+![Diagrama](img/Diagrama.PNG)
 
 # Tecnologias utilizadas
 
