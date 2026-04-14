@@ -44,6 +44,9 @@ O projeto está organizado em camadas e projetos separados para manter responsab
 - SistemaPedidos.Infraestrutura
   - Implementações de repositórios, responsável pela persistência em arquivos JSON.
 
+- SistemaPedidos.Domain.Test
+  - Testes unitários das entidades Pessoa, Produto e Pedido
+
 # Estrutura de pastas
 
 
@@ -52,7 +55,10 @@ O projeto está organizado em camadas e projetos separados para manter responsab
 ├── README.md
 ├── SistemaPedidos
 │   ├── SistemaPedidos.slnx
-│   ├── SistemaPedidos
+│   └── tests
+│       └── SistemaPedidos.Domain.Test
+│           └── Entities
+│   └── SistemaPedidos
 │       ├── Functions
 │       └── Resources
 │           ├── img
