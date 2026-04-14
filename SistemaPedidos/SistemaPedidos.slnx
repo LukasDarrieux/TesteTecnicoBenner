@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/tests/">
+    <Project Path="tests/SistemaPedidos.Domain.Test/SistemaPedidos.Domain.Test.csproj" Id="19a9e8b8-8e15-446b-9749-3433c052792f" />
+  </Folder>
   <Project Path="SistemaPedidos.Aplicacao/SistemaPedidos.Aplicacao.csproj" Id="c44adc69-c0c2-474e-b49e-2811dc558ed3" />
   <Project Path="SistemaPedidos.Domain/SistemaPedidos.Domain.csproj" Id="e7d79824-e19a-415b-810b-6cd417c7c6dd" />
   <Project Path="SistemaPedidos.Infraestrutura/SistemaPedidos.Infraestrutura.csproj" Id="04cbd322-45dd-4cfc-bab6-358c164271fd" />
