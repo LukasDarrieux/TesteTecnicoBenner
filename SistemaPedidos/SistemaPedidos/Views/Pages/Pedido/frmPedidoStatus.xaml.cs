@@ -29,7 +29,7 @@ namespace SistemaPedidos.Views.Pages
             txtData.Text = Pedido.DataVenda.ToString("dd/MM/yyyy");
             txtPagamento.Text = Pedido.Pagamento.ToString();
             txtValorTotal.Text = Pedido.ValorTotal.ToString("F2");
-            cbStatus.SelectedItem = Pedido.Status;
+            cbStatus.SelectedValue = Pedido.Status;
         }
 
         private void btnCancelar_Click(object sender, RoutedEventArgs e)
@@ -40,7 +40,7 @@ namespace SistemaPedidos.Views.Pages
         private void btnSalvar_Click(object sender, RoutedEventArgs e)
         {
             
-            if(!Pedido.AtualizarStatus((StatusPedido)cbStatus.SelectedItem))
+            if(!Pedido.AtualizarStatus((StatusPedido)cbStatus.SelectedValue))
             {
                 MessageBox.Show(Pedido.ValidationErrors.FirstOrDefault(), "Validação", MessageBoxButton.OK, MessageBoxImage.Warning);
                 this.DialogResult = false;

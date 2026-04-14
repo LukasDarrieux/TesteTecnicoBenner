@@ -107,7 +107,7 @@ namespace SistemaPedidos.Views.Pages
             {
                 var pessoa = cbPessoa.SelectedItem as Pessoa;
                 var itens = dataGridItens.Items.OfType<ItemPedido>().ToList();
-                var pagamento = cbPagamento.SelectedItem == null ? 0 : (FormaPagamento)cbPagamento.SelectedItem;
+                var pagamento = cbPagamento.SelectedItem == null ? 0 : (FormaPagamento)cbPagamento.SelectedValue;
                 Pedido pedido = new Pedido(pessoa, itens, pagamento);
                 if (!pedido.IsValid())
                 {
